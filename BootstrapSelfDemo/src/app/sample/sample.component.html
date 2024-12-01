@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfinityX Custom ROM</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            padding-top: 56px;
+        }
+        .card {
+            background-color: #1e1e1e;
+            border: none;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1920x600') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .modal-content {
+            background-color: #1e1e1e;
+            color: #ffffff;
+        }
+        footer {
+            background-color: #1e1e1e;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">InfinityX ROM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#devices">Devices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Welcome to InfinityX Custom ROM</h1>
+            <p>Experience the ultimate performance and features!</p>
+            <a href="#devices" class="btn btn-primary btn-lg">Explore Devices</a>
+        </div>
+    </header>
+
+    <!-- Devices Section -->
+    <section id="devices" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Supported Devices</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="card mb-4" data-bs-toggle="modal" data-bs-target="#device1Modal">
+                        <div class="card-body">
+                            <h3 class="card-title">Device One</h3>
+                            <p class="card-text">Click for more info.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4" data-bs-toggle="modal" data-bs-target="#device2Modal">
+                        <div class="card-body">
+                            <h3 class="card-title">Device Two</h3>
+                            <p class="card-text">Click for more info.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4" data-bs-toggle="modal" data-bs-target="#device3Modal">
+                        <div class="card-body">
+                            <h3 class="card-title">Device Three</h3>
+                            <p class="card-text">Click for more info.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Device Modals -->
+    <div class="modal fade" id="device1Modal" tabindex="-1" aria-labelledby="device1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="device1ModalLabel">Device One Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Maint ainer:</strong> John Doe</p>
+                    <p><strong>Description:</strong> Device One is optimized for performance and battery life.</p>
+                    <a href="#" class="btn btn-primary">Download ROM</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="device2Modal" tabindex="-1" aria-labelledby="device2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="device2ModalLabel">Device Two Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Maintainer:</strong> Jane Smith</p>
+                    <p><strong>Description:</strong> Device Two offers a smooth user experience with enhanced features.</p>
+                    <a href="#" class="btn btn-primary">Download ROM</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="device3Modal" tabindex="-1" aria-labelledby="device3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="device3ModalLabel">Device Three Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Maintainer:</strong> Alex Johnson</p>
+                    <p><strong>Description:</strong> Device Three is designed for gamers with high performance.</p>
+                    <a href="#" class="btn btn-primary">Download ROM</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2024 InfinityX ROM. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+</body>
+</html>

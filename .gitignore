@@ -1,0 +1,11 @@
+# Ignore common build output directories
+**/dist
+**/build
+
+# Ignore IDE configuration files
+.idea/
+.vscode/
+
+#Temporary Files
+*.tmp
+temp/

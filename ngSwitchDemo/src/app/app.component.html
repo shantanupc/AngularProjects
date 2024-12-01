@@ -1,0 +1,10 @@
+<h1> Demonstration of ngSwitch </h1>
+
+<div [ngSwitch] = "BatchName">
+  <div *ngSwitchCase = "'PPA'"> You select Pre-Placement Activity </div>
+  <div *ngSwitchCase = "'LB'"> You select Logic Building batch </div>
+  <div *ngSwitchCase = "'Angular'"> You select Angular web development batch </div>
+  <div *ngSwitchCase = "'Python'"> You select Python Machine Learning batch </div>
+  
+  <div *ngSwitchDefault> There is no such batch </div>
+</div>
